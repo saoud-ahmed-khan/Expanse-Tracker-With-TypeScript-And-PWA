@@ -4,9 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        abc   
-      </header>
+        <h1 className="heading">EXPENSE TRACKER</h1>
+     
     </div>
   );
 }
