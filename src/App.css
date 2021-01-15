@@ -11,7 +11,40 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.conmtainer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.banner1
+{
+  background-color: whitesmoke;
+  height: 400px;
+  width: auto;
+  order: 1;
+  width: 300px;
+}
+.banner2
+{
+  background-color: whitesmoke;
+  height: 400px;
+  width: auto;
+  order: 2;
+  width: 300px;
 
+
+}
+.banner3
+{
+  background-color: whitesmoke;
+  height: 400px;
+  width: 300px;
+
+  order: 3;
+
+}
 .App-header {
   background-color:white;
   min-height: 100vh;
