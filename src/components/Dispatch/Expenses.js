@@ -1,9 +1,7 @@
 import React from 'react'
 
-export function Expenses(props) {
-    
-
-    return (
+export const Expenses:React.FC <prop>= ()=>
+  (
         <>
         <h1 style={{color:"darkred"}} className="heading">Expense</h1>
         <div className="innerb1">
@@ -14,5 +12,5 @@ export function Expenses(props) {
         </div>
       </div>    </>
     )
-}
+
 

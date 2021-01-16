@@ -1,9 +1,7 @@
 import React from 'react'
 
-export function Total(props) {
-    
-
-    return (
+export const Total:React.FC <prop>= ()=>
+  (
         <>
         <h1 style={{color:"darkcyan"}} className="heading">Total</h1>
       <div className="innerb1">
@@ -11,4 +9,4 @@ export function Total(props) {
       </div>
     </>
     )
-}
+
