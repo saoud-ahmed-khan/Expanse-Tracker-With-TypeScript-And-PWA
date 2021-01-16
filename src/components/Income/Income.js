@@ -1,14 +1,17 @@
 import React from "react";
 
-export function Income(props) {
+export const Income:React.FC<> {
   return (
     <>
-        <h2 style={{color:"darkgreen"}} className="heading">Income</h2>
+      <h2 style={{ color: "darkgreen" }} className="heading">
+        Income
+      </h2>
       <div className="innerb1">
-          <input type="number" placeholder="Diposit amount" required/>
-       <input type="Text" placeholder="Source of Income" required/>
-       <button>Deposite</button>
-
+        <div className="input"> 
+          <input type="number" placeholder="Diposit amount" required />
+          <input type="Text" placeholder="Source of Income" required />
+          <button>Deposit</button>
+        </div>
       </div>
     </>
   );
