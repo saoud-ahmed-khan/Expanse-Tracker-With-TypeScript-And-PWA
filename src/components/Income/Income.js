@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export function Income(props) {
-    
-
-    return (
-        <>
-            
-        </>
-    )
+  return (
+    <>
+        <h2 className="heading">Income</h2>
+      <div className="innerb1"></div>
+    </>
+  );
 }
