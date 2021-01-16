@@ -5,7 +5,7 @@ export function Expenses(props) {
 
     return (
         <>
-        <h1 className="heading">Expense</h1>
+        <h1 style={{color:"darkred"}} className="heading">Expense</h1>
       <div className="innerb1"></div>
     </>
     )

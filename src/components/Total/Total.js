@@ -5,9 +5,9 @@ export function Total(props) {
 
     return (
         <>
-        <h1 className="heading">Total</h1>
+        <h1 style={{color:"darkcyan"}} className="heading">Total</h1>
       <div className="innerb1">
-    <div className="totalText">$1000000000000000000</div>
+    <div className="totalText">$ 100000</div>
       </div>
     </>
     )
