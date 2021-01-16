@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Expenses:React.FC <props> {
+export function Expenses(props) {
     
 
     return (
@@ -9,3 +9,4 @@ export function Expenses:React.FC <props> {
         </>
     )
 }
+
