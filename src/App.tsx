@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import { Expenses } from './components/Dispatch/Expenses';
+import { Expenses } from './components/Dispatch/Expensess';
 import { Income } from './components/Income/Income';
 import { Total } from './components/Total/Total';
 import { Context} from './components/Context';
 
-function App() {
+function App():JSX.Element {
   return (
     <div className="App">
         <h1 className="heading">EXPENSE TRACKER</h1>

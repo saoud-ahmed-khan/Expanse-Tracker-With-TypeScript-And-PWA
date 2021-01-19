@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { contaxt } from "../Context";
 
-export const Total: React.FC<prop> = () => {
+export const Total: React.FC= () => {
   const dataa=useContext(contaxt)
   const {Total}=dataa
   return (
