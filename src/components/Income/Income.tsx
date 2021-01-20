@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { contaxt } from "../Context";
+import React, { useContext, useState } from "react";
+import { contaxt} from "../Context";
 
 export const Income: React.FC = () => {
   const dataa = useContext(contaxt);
-  const { setTotal, Income, setIncome, transectionData } = dataa
-  let source:string=""
+  const { setTotal, Income, setIncome, transectionData ,settransectionData} = dataa
+  const [souce,Setsource]=useState<string>("")
   return (
     <>
       <h2 style={{ color: "darkgreen" }} className="heading">
@@ -24,16 +24,16 @@ export const Income: React.FC = () => {
             type="Text"
             name="source"
             placeholder="Source of Income"
-            onChange={(e)=>{source=e.target.value}}
-
+            onChange={(e)=>{Setsource(e.target.value)}}
             required
           />
+         
           <button onClick={() => {
             if (Income !== 0) {
               setTotal((prev) => (prev + Income)); 
-              setIncome(0);
-              let data ={amount:Income, from:"Income",source:source};
-              transectionData=[data,...];
+              settransectionData([{amount:Income,from:"darkgreen",source:souce}, ...transectionData])
+              setIncome(0);  
+                  
             }
           }}>Deposit</button>
         </div>

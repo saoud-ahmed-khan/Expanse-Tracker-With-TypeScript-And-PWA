@@ -174,8 +174,8 @@
     word-wrap: break-word;
   }
 }
-.label
-{
-  color: darkgreen;
-  font-size: large;
+.transmap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
