@@ -4,7 +4,7 @@ import { contaxt } from "../Context";
 export const Income: React.FC = () => {
   const dataa = useContext(contaxt);
   const { setTotal, Income, setIncome, transectionData } = dataa
-  let source:string="",
+  let source:string=""
   return (
     <>
       <h2 style={{ color: "darkgreen" }} className="heading">
@@ -32,7 +32,8 @@ export const Income: React.FC = () => {
             if (Income !== 0) {
               setTotal((prev) => (prev + Income)); 
               setIncome(0);
-              transectionData=[{amount:Income, from:"Income",source:source},...]
+              let data ={amount:Income, from:"Income",source:source};
+              transectionData=[data,...];
             }
           }}>Deposit</button>
         </div>

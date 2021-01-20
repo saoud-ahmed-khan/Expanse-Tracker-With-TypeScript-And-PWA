@@ -11,7 +11,7 @@ export interface abc {
 
 
 }
-const ab:abc=
+let ab:abc=
 {
 Total:0,
 Income:0,
@@ -19,9 +19,9 @@ Expence:0,
 setTotal:(Total:React.SetStateAction<number>)=> null,
 setIncome:(Income:React.SetStateAction<number>)=> null,
 setExpence:(Expence:React.SetStateAction<number>)=> null,
-transectionData:[{amount:0,from:"",source:""}]
+transectionData:[{amount:0,from:"",source:""}],
 }
-let transectionData :[{amount:number , from:string,source:string }];
+let transectionData :{amount:number , from:string,source:string }[];
 export const contaxt = React.createContext<abc>(ab);
 export const Context: React.FC = ({ children }) => {
    
