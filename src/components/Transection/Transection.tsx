@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { contaxt } from "../Context";
 export const Transection: React.FC = () => {
     const data = React.useContext(contaxt)
