@@ -15,8 +15,8 @@ export const Transection: React.FC = () => {
                 transectionData.map((tdata) => {
                     return (
                         <div key={key} className="transmap">
-                            <h3 style={{ color: tdata.from }}> {tdata.source}</h3>
-                            <h3 style={{ color: tdata.from }}>{tdata.amount}</h3>
+                            <div style={{ color: tdata.from }}> {tdata.source}</div>
+                            <div style={{ color: tdata.from }}>{tdata.amount}</div>
                         </div>
                     )
                 })
