@@ -6,22 +6,22 @@ export const Transection: React.FC = () => {
     const key: number = 0
     return (
         <div className="transcontainer">
-            <table>
-                <tr>
-                    <th>Details</th>
-                    <th>Transection Amount</th>
-                </tr>
-                {
-                    transectionData.map((tdata) => {
-                        return (
-                            <div key={key} className="transmap">
-                                <h3 style={{ color: tdata.from }}> {tdata.source}</h3>
-                                <h3 style={{ color: tdata.from }}>{ tdata.amount }</h3>
-                            </div>
-                        )
-                    })
-                }
-            </table>
+
+            <div className="transout">
+                <div>Details</div>
+                <div>Transection Amount</div>
+            </div>
+            {
+                transectionData.map((tdata) => {
+                    return (
+                        <div key={key} className="transmap">
+                            <h3 style={{ color: tdata.from }}> {tdata.source}</h3>
+                            <h3 style={{ color: tdata.from }}>{tdata.amount}</h3>
+                        </div>
+                    )
+                })
+            }
+
         </div>
     )
 }

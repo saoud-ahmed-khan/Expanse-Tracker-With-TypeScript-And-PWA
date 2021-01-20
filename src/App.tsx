@@ -8,7 +8,7 @@ import { Transection } from "./components/Transection/Transection";
 
 function App(): JSX.Element {
   return (
-    <div className="App">
+    <div>
       <h1 className="heading">EXPENSE TRACKER</h1>
 
       <Context>
@@ -17,7 +17,7 @@ function App(): JSX.Element {
           <div className="banner2"><Total /></div>
           <div className="banner3"><Expenses /></div>
         </div>
-        <Transection/>
+        <Transection />
 
       </Context>
 
