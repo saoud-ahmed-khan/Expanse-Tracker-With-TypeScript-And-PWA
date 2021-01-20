@@ -3,7 +3,8 @@ import { contaxt } from "../Context";
 
 export const Income: React.FC = () => {
   const dataa = useContext(contaxt);
-  const { setTotal, Income, setIncome, } = dataa
+  const { setTotal, Income, setIncome, transectionData } = dataa
+  let source:string="",
   return (
     <>
       <h2 style={{ color: "darkgreen" }} className="heading">
@@ -11,22 +12,29 @@ export const Income: React.FC = () => {
       </h2>
       <div className="innerb1">
         <div className="input">
-          <span className="label">Deposit Amount</span>:<input
+          <input
             type="number"
             name="amount"
             onChange={(e) => { setIncome(+(e.target.value)) }}
             placeholder="Diposit amount"
-            value={Income}
+            value={Income !== 0 ? Income : "Enter Amount"}
             required
           />
-          <span className="label">Source of Income</span>:<input
+          <input
             type="Text"
             name="source"
             placeholder="Source of Income"
+            onChange={(e)=>{source=e.target.value}}
 
             required
           />
-          <button onClick={() => { setTotal((prev) => (prev + Income)); setIncome(0); }}>Deposit</button>
+          <button onClick={() => {
+            if (Income !== 0) {
+              setTotal((prev) => (prev + Income)); 
+              setIncome(0);
+              transectionData=[{amount:Income, from:"Income",source:source},...]
+            }
+          }}>Deposit</button>
         </div>
       </div>
     </>
