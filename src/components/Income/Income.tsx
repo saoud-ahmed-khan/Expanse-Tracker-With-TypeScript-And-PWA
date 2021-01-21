@@ -26,14 +26,21 @@ export const Income: React.FC = () => {
             placeholder="Source of Income"
             onChange={(e) => { Setsource(e.target.value) }}
             required
+            value={souce}
           />
 
           <button onClick={() => {
-            if (Income !== 0) {
+
+            if (Income === 0 || souce==="" || Income < 0) 
+            {
+              
+              alert("Invalid Income Amount or Income Source  ")
+            }
+            else{
               setTotal((prev) => (prev + Income));
               settransectionData([{ amount: Income, from: "darkgreen", source: souce }, ...transectionData])
               setIncome(0);
-
+              Setsource('')
             }
           }}>Deposit</button>
         </div>

@@ -182,13 +182,28 @@
   justify-content: space-around;
   width: 100%;
   font-size: large;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 1%;
+  margin-top: 1%;
+  -webkit-box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+
+}
+.transmap div{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  word-wrap: break-word;
+  height: auto;
+  justify-content: center;
+
+
 }
 .transcontainer
 {
   margin: auto;
-  width: 85%;
-  margin-top: 2%;
- 
+  width: 80%;
 }
 .transout
 {
@@ -201,5 +216,12 @@
   font-size: large;
   padding: 1%;
   border-radius: 10px;
-  
+  text-align: center;
+  border-left: 5px solid darkcyan;
+  -webkit-box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+}
+.transout div
+{
+  width: 50%;
 }
