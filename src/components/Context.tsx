@@ -36,7 +36,6 @@ export const Context: React.FC = ({ children }) => {
     const [Income, setIncome] = React.useState<number>(0);
     const [Expence, setExpence] = React.useState<number>(0);
     const [transectionData, settransectionData] = React.useState<transections[]>([]);
-    console.log(transectionData)
     
     return (
         <contaxt.Provider value={{ Total, Income, Expence, setTotal, setIncome, setExpence, transectionData, settransectionData }}>
