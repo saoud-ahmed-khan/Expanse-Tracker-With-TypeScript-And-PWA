@@ -1,3 +1,3 @@
 let cacheData="app1"
-this.addEventListener("install", (event)=>{event.waitUntil(caches.open(cacheData).then((cache)=>{cache.addAll(['/static/js/mian.chunk.js','/static/js/0.chunk.js','/static/js/bundle.js','/index.html','/','/static/css/main.9fce83ac.chunk.css','/static/js/2.cf08902c.chunk.js','/static/js/main.2f83002b.chunk.js'])}))})
-this.addEventListener("fetch",(event)=>{event.respond(caches.match(event.request).then((resp)=>{if(resp){return resp}}))})
+this.addEventListener("install", (event)=>{event.waitUntil(caches.open(cacheData).then((cache)=>{cache.addAll(['/favicon.ico','/static/js/main.chunk.js','/static/js/0.chunk.js','/static/js/bundle.js','/index.html','/',])}))})
+this.addEventListener("fetch",(event)=>{event.respondWith(caches.match(event.request).then((resp)=>{if(resp){return resp}}))})
