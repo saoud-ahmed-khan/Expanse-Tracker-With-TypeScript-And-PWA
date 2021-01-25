@@ -1,15 +1,15 @@
 import firebase from 'firebase'
 
 export const initWithFirebase = () => {
-    var firebaseConfig = {
-        apiKey: "AIzaSyAuIZcIoD5CeDbQu6C6zBRoYsfF2b6MvJA",
-        authDomain: "pwa-expense-tracker-app.firebaseapp.com",
-        databaseURL: "https://pwa-expense-tracker-app.firebaseio.com",
-        projectId: "pwa-expense-tracker-app",
-        storageBucket: "pwa-expense-tracker-app.appspot.com",
-        messagingSenderId: "991637935859",
-        appId: "1:991637935859:web:54ffc4a58aa8080b104986"
+    const firebaseConfig = {
+        apiKey: "AIzaSyA8-7y3o8AbXun5v2oVyjgSX49VCzkQuLs",
+        authDomain: "expensetrackerpwa-8105f.firebaseapp.com",
+        projectId: "expensetrackerpwa-8105f",
+        storageBucket: "expensetrackerpwa-8105f.appspot.com",
+        messagingSenderId: "776750821458",
+        appId: "1:776750821458:web:28f08e17e34dea34362f8b"
       };
+      
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
 }
@@ -27,6 +27,4 @@ export const askForPermissioToReceiveNotifications = async () => {
     } catch (error) {
         console.error(error);
     }
-    
-
 }

@@ -6,7 +6,7 @@ importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js');
 
 
 firebase.initializeApp({
-    messagingSenderId: "messagingSenderId",
+    messagingSenderId: "messagingSenderId"
 });
 
 const messaging = firebase.messaging();
