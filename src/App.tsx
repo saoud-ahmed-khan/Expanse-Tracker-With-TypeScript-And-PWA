@@ -5,32 +5,21 @@ import { Income } from './components/Income/Income';
 import { Total } from './components/Total/Total';
 import { Context } from './components/Context';
 import { Transection } from "./components/Transection/Transection";
-// import firebase from "./firebase";
+import firebase from "./firebase"
 function App() {
+  // Firebase Messaging
+  const messaging = firebase.messaging()
+  messaging
+    .requestPermission()
+    .then(() => messaging.getToken())
+    .then((token) => {
+      // prompt("token", token)
+      localStorage.setItem("token", JSON.stringify(token))
+    })
+    .catch((err) => {
+      console.warn("Notifications blocked !")
+    })
 
-  // firebase notification permission
-  // useEffect( () => {
-  //   const messaging = firebase.messaging();
-  //   messaging.requestPermission().then(() => {
-  //     return messaging.getToken()
-  //     .then((token) => {
-  //       prompt("Token" , token)
-  //     })
-  //   }) 
-  // } , []);
-  // React.useEffect( () => {
-  //   const messaging = firebase.messaging();
-  //   messaging.requestPermission().then(() => {
-  //     return messaging.getToken().then((token) => {
-  //       if (token){
-  //         prompt("Welcome to my App \nToken" ,token)
-  //       }
-  //       else{
-  //         console.log("Token not available")
-  //       }
-  //     })
-  //   })
-  // } )
 
   return (
     <div>
