@@ -10,7 +10,7 @@ export const Expenses = () => {
 
   return (
     <>
-      <h1 style={{ color: "darkred" }} className="heading">Expense</h1>
+      <h1 style={{ color: "darkred" }} className="heading">Expens111e</h1>
       <div className="innerb1">
         <div className="input">
           <input onChange={(e) => { setExpence(+(e.target.value)) }} style={{ outlineColor: "darkred" }} placeholder="Withdraw amount"
