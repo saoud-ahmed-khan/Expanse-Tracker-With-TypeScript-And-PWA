@@ -1,5 +1,17 @@
-export default function swDev(){
+const swDev = () => {
+   
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js').then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
 
-    let swUrl = `${process.env.PUBLIC_URL}/serviceWorker.ts`
-    navigator.serviceWorker.register(swUrl).then((result) => console.log(result) )
-  }
+};
+
+export default swDev;
