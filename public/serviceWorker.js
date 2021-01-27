@@ -2,29 +2,19 @@ const CACHE_NAME = "expenseTrackerCache"
 
 const filesToCache = [
   "/",
-  "index.html",
-  "manifest.json",
-
-  "/static/js/0.chunk.js",
-  "/static/js/1.chunk.js",
-  "/static/js/bundle.js",
-  "/static/js/main.chunk.js",
-
   '/static/css/main.9deea3a9.chunk.css',
-  '/static/js/2.cf08902c.chunk.js',
-  '/static/js/main.68a4554a.chunk.js',
-  
-  
-  '/static/js/main.3c97377f.chunk.js',
-  '/static/js/main.3412f04b.chunk.js',
+  '/static/js/2.8fe3b48e.chunk.js',
+  '/static/js/main.f537e58c.chunk.js',
   '/favicon.ico',
-  '/favicon-32x32.png',
-  '/favicon-16x16.png'
+  '/static/js/main.ceedb4e8.chunk.js',
+  '/manifest.json',
+  'serviceWorker.js',
 
+  '/static/js/bundle.js',
+  '/static/js/0.chunk.js',
+  '/static/js/main.chunk.js',
+  '/sockjs-node'
 
-
-
-  
 
 ]
 
